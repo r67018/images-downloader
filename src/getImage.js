@@ -12,18 +12,6 @@ const getImage = async (keyword, number) => {
 
         // Go to google.com
         await page.goto(`https://www.google.com/search?hl=jp&q=${keyword}&btnG=Google+Search&tbs=0&safe=off&tbm=isch`)
-        // await page.goto('https://www.google.com/');
-
-        // // Search for keyword
-        // selector = 'body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input';
-        // await page.type(selector, keyword);
-        // await (await page.$(selector)).press('Enter');
-        // await page.waitForNavigation();
-
-        // // Click image tab
-        // selector = '#hdtb-msb > div:nth-child(1) > div > div:nth-child(2) > a';
-        // await (await page.$(selector)).press('Enter');
-        // await page.waitForNavigation();
 
         // Collect images
         selector = '#islrg > div.islrc > div:nth-child(n) > a.wXeWr.islib.nfEiy > div.bRMDJf.islir > img';
